@@ -74,7 +74,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapsize=1024m \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=4m \
-    dalvik.vm.heapmaxfree=8m
+    dalvik.vm.heapmaxfree=8m \
+    dalvik.vm.dex2oat-swap=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.texture_cache_size=96 \
