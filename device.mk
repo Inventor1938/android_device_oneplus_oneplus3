@@ -70,8 +70,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
-    dalvik.vm.heapgrowthlimit=256m \
-    dalvik.vm.heapsize=512m \
+    dalvik.vm.heapgrowthlimit=384m \
+    dalvik.vm.heapsize=1024m \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=8m
@@ -202,12 +202,12 @@ PRODUCT_PACKAGES += \
     ethertypes
 
 # IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
 
 # IRSC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
